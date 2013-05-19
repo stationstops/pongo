@@ -1,14 +1,13 @@
-use v6;
-class Pongo::Animal:auth<uschoch>:ver<0.001>;
-
-our $VERSION = '0.085';
+class Pongo::Animal;
 
 has Str $.name;
  
-method eat( $food ) is export{
+method eat( $food ){
 	say "$.name is eating some $food";
 }
  
-method sleep($self:) is export{
+method sleep($self:)
+{
 	say $self.name ~ ' is sleeping.';
 }
+

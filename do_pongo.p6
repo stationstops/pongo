@@ -1,8 +1,7 @@
-#!/Users/uschoch/local/localperl6/rakudo-star-2013.02/rakudo/perl6
+#!/usr/bin/env perl6
 
 use v6;
-BEGIN { @*INC.push('../lib') };
-use lib '../lib';
+BEGIN { @*INC.push('./lib') };
 use Pongo::Animal;
 
 my $dog = Pongo::Animal.new( name => 'Leela' );
